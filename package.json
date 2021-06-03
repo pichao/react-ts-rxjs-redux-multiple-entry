@@ -1,5 +1,5 @@
 {
-    "name": "react-ts-redux",
+    "name": "react-ts-rxjs-multiple-entry",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -39,6 +39,7 @@
         "sass-loader": "^11.0.1",
         "source-map-loader": "^2.0.1",
         "style-loader": "^2.0.0",
+        "ts-import-plugin": "^1.6.7",
         "ts-loader": "^9.2.2",
         "typescript": "^4.2.4",
         "typings-for-css-modules-loader": "^1.7.0",
@@ -48,6 +49,7 @@
         "webpack-dev-server": "^3.11.2"
     },
     "dependencies": {
+        "preact": "^10.5.13",
         "querystring": "^0.2.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
