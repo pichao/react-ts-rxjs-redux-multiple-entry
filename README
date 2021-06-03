@@ -1,0 +1,26 @@
+# 项目须注意点：
+   webpack命令行参数：npm run start -- --name test，获取参数name，当配置文件是函数时，会将命令行参数注入配置文件参数argv
+   上述命令行得到argv为{ name: 'test', env: { WEBPACK_SERVE: true } 
+   环境变量通过cross-env,传递至process.env,通过webpack插件webpackDefinPlugin注入页面
+
+
+   关于nodejs多版本管理工具nvm-windows
+      下载地址：https://github.com/coreybutler/nvm-windows/releases,下载 nvm-setup.zip即可
+
+      相关命令：nvm list 查看当前电脑安装的node版本
+               nvm list available 查看当前可以安装版本
+               nvm use version 切换node版本
+               nvm install version 下载版本
+
+
+
+   前端nginx本地部署：启动nginx和停止nginx，在nginx所在目录执行：
+         start nginx 启动nginx
+         ./nginx -s stop  立即停止nginx
+         nginx的root路径如果不写在nginx的html文件下，写在别的盘，windows下应该注意斜杠，如，F:/workerspace/react-ts-redux/build，不是F:\workerspace\react-ts-redux\build
+      nginx部署注意点，前端路由路径最好不要和组件名一样，因为在代码分割时会生成相应目录，前端路由名和文件夹名一样时，nginx会对路由进行重定向，自动加上/，导致403
+
+   关于rxjs ：
+         7版本，目前与redux-observable 不兼容，暂时建议6版本
+
+

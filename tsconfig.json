@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "esnext",
+        "noImplicitAny": false,
+        "outDir": "./build/",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es5",
+        "baseUrl": "src",
+        "paths": {
+            "utils": ["utils/*"],
+            "assets": ["assets/*"],
+            "components": ["components/*"],
+            "pages": ["pages/*"],
+            "store": ["store/*"],
+            "entry": ["entry/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
